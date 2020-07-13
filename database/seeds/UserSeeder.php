@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
         User::updateOrCreate([
             'role_id' => $adminRole->id,
             'name' => 'Admin',
-            'email' => 'admin@mail.com',
+            'email' => 'admin@gmail.com',
             'password' => Hash::make('password'),
             'status' => true
         ]);
@@ -29,7 +29,7 @@ class UserSeeder extends Seeder
         User::updateOrCreate([
             'role_id' => $userRole->id,
             'name' => 'Jone Doe',
-            'email' => 'user@mail.com',
+            'email' => 'user@gmail.com',
             'password' => Hash::make('password'),
             'status' => true
         ]);
